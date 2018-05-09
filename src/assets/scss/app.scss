@@ -6,8 +6,8 @@
 
 
 @import 'slick-carousel';  			// Fails to find module
-require('{{root}}assets/vendor/photoswipe/photoswipe.css');
-require('{{root}}assets/vendor/photoswipe/default-skin/default-skin.css');
+@require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe.css');
+@require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/default-skin/default-skin.css');
 
 
 @include foundation-global-styles;

@@ -13,17 +13,12 @@ import libs from './lib/dependencies';                                    // Imp
 window.libs = libs;
 
 
-// Test script order via console log
-require('./lib/test2');
-require('./lib/test1');
-
-
-require('{{root}}assets/vendor/photoswipe/photoswipe.min');               // Plugin file for Photoswipe
-require('{{root}}assets/vendor/photoswipe/photoswipe-ui-default.min');    // Plugin file for PHotoswipe
+require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe.min');               // Plugin file for Photoswipe
+require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe-ui-default.min');    // Plugin file for PHotoswipe
 require('./lib/photoswipe');                                              // Photoswipe code
 
 
-require('./lib/docready');                                                // Initialise plugins/modules
+require('./lib/docready');                                                // Initialise plugins/modules – in dist app.js this gets printed before the Photoswipe code
 
 
 $(document).foundation();
