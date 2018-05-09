@@ -3,7 +3,12 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-//@import 'slick-carousel';
+
+
+@import 'slick-carousel';  			// Fails to find module
+require('{{root}}assets/vendor/photoswipe/photoswipe.css');
+require('{{root}}assets/vendor/photoswipe/default-skin/default-skin.css');
+
 
 @include foundation-global-styles;
 // @include foundation-grid;
