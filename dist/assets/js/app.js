@@ -14586,16 +14586,18 @@ window.$ = _jquery2.default;
 //import './lib/foundation-explicit-pieces';
 
 
-// Import Slick module
 window.libs = _dependencies2.default;
 
-__webpack_require__(44); // Plugin file for Photoswipe
-__webpack_require__(43); // Plugin file for PHotoswipe
-__webpack_require__(42); // Photoswipe code
+__webpack_require__(44);
+__webpack_require__(43);
+__webpack_require__(42);
+
+// require('/Users/nss/FoundationSandpit/src/assets/vendor/test.js');
+// require('../../vendor/test.js');
+// require('{{root}}src/assets/vendor/test.js');
 
 
-__webpack_require__(41); // Initialise plugins/modules – in dist app.js this gets printed before the Photoswipe code
-
+__webpack_require__(41);
 
 (0, _jquery2.default)(document).foundation();
 
@@ -25206,7 +25208,7 @@ $(document).ready(function () {
 "use strict";
 
 
-var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
+window.initPhotoSwipeFromDOM = function (gallerySelector) {
 
 			// parse slide data (url, title, size ...) from DOM elements 
 			// (children of gallerySelector)

@@ -43,6 +43,4 @@ $(document).ready(function(){
 	/* End photoswipe photo gallery */
 
 
-
-
 }); // End document ready

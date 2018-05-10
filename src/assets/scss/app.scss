@@ -5,7 +5,7 @@
 @import 'motion-ui';
 
 
-@import 'slick-carousel';  			// Fails to find module
+@import 'slick.scss';
 @require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe.css');
 @require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/default-skin/default-skin.css');
 

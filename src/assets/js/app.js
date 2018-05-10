@@ -9,16 +9,20 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 
-import libs from './lib/dependencies';                                    // Import Slick module
+import libs from './lib/dependencies';
 window.libs = libs;
 
 
-require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe.min');               // Plugin file for Photoswipe
-require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe-ui-default.min');    // Plugin file for PHotoswipe
-require('./lib/photoswipe');                                              // Photoswipe code
+require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe.min.js');
+require('/Users/nss/FoundationSandpit/src/assets/vendor/photoswipe/photoswipe-ui-default.min.js');
+require('./lib/photoswipe');
+
+// require('/Users/nss/FoundationSandpit/src/assets/vendor/test.js');
+// require('../../vendor/test.js');
+// require('{{root}}src/assets/vendor/test.js');
 
 
-require('./lib/docready');                                                // Initialise plugins/modules – in dist app.js this gets printed before the Photoswipe code
+require('./lib/docready');
 
 
 $(document).foundation();
